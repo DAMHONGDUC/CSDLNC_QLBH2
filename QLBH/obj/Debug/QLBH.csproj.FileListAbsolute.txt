@@ -1,0 +1,11 @@
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\bin\Debug\QLBH.exe.config
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\bin\Debug\QLBH.exe
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\bin\Debug\QLBH.pdb
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.Properties.Resources.resources
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.csproj.GenerateResource.cache
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.csproj.CoreCompileInputs.cache
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.exe
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.pdb
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.Form_ChiTietHoaDon.resources
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.Form_Main.resources
+D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.csprojAssemblyReference.cache

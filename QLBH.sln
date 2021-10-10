@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLBH", "QLBH\QLBH.csproj", "{9CEF5E55-80ED-474B-9809-0C08BFB3BD5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CEF5E55-80ED-474B-9809-0C08BFB3BD5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEF5E55-80ED-474B-9809-0C08BFB3BD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEF5E55-80ED-474B-9809-0C08BFB3BD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEF5E55-80ED-474B-9809-0C08BFB3BD5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {878B35A1-E705-4DFD-8FE5-8669DEC8D5EB}
+	EndGlobalSection
+EndGlobal
