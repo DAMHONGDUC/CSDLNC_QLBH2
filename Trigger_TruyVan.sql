@@ -2,6 +2,34 @@
 USE QLBH
 
 GO
+Create trigger Insert_CT_HoaDon_ThanhTien_TongTien
+    on CT_HoaDon
+    for insert
+    as
+    begin
+       begin
+       -- update thanh tien
+    	update CT_HoaDon
+    	set thanhtien = I.SOLUONG * (I.GIABAN - I.GIAGIAM)
+    	from inserted I, 
+    		 CT_HoaDon CTHD,
+    		 HOADON HD,
+    		 SANPHAM SP
+        --Chi tiết hóa đơn mới thêm vào phải tồn tại sản phẩm, và mã hóa đơn
+    	where SP.MASP=I.MASP_CT and SP.MASP=CTHD.MASP_CT and HD.MAHD=I.MAHD_CT and HD.MAHD=CTHD.MAHD_CT
+       end
+       -- update tong tien 
+       begin
+       update HOADON
+        set TONGTIEN = TONGTIEN + (select CTHD.THANHTIEN  
+                                  from inserted I,CT_HOADON CTHD
+                                  where MAHD=CTHD.MAHD_CT and CTHD.MAHD_CT=I.MAHD_CT and I.MASP_CT=CTHD.MASP_CT)
+       from HOADON HD, inserted
+       where HD.MAHD=inserted.MAHD_CT
+       end 
+    end 
+  
+GO
 --Tạo trigger để tự cập nhật Thành tiền ở bản chi tiết hóa đơn 
 --và Tổng tiền ở bảng hóa đơn
 Create trigger update_CT_HoaDon_ThanhTien_TongTien
