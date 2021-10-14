@@ -1,9 +1,10 @@
 # CSDLNC_QLBH
 HCMUS | CSDLNC Project
 
-Step 1: Install .NET Framework in Visual Studio Installer
+* Need to install .NET Framework 
 
-Step 2: go to folder Database and run two files QLBH.sql , Data_Genarate.sql
+Step 1: extract the file database.rar and run file QLBH.sql
+
+Step 2: run generate data files : QLBH_CTHD.sql, QLBH_HD.sql, QLBH_KH.sql, QLBH_SP.sql
 
 Step 3: run file QLBH.sln
-
