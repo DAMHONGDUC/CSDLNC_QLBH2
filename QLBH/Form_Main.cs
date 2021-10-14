@@ -23,6 +23,7 @@ namespace QLBH
         {
             //Mở kết nối
             Source.Functions.Connect();
+           
         }
 
         private void Form_Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -34,6 +35,6 @@ namespace QLBH
             Application.Exit();
         }
 
-        
+       
     }
 }

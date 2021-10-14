@@ -9,3 +9,15 @@ D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.pdb
 D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.Form_ChiTietHoaDon.resources
 D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.Form_Main.resources
 D:\1.Super Code Folder\Window Form C#\QLBH\QLBH\obj\Debug\QLBH.csprojAssemblyReference.cache
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\bin\Debug\QLBH.exe.config
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\bin\Debug\QLBH.exe
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\bin\Debug\QLBH.pdb
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\obj\Debug\QLBH.csprojAssemblyReference.cache
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\obj\Debug\QLBH.Form_ChiTietHoaDon.resources
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\obj\Debug\QLBH.Form_Main.resources
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\obj\Debug\QLBH.Properties.Resources.resources
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\obj\Debug\QLBH.csproj.GenerateResource.cache
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\obj\Debug\QLBH.csproj.CoreCompileInputs.cache
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\obj\Debug\QLBH.exe
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\obj\Debug\QLBH.pdb
+C:\Users\Dam Hong Duc\Desktop\CSDLNC_QLBH-master\QLBH\obj\Debug\QLBH.Form_Loading.resources

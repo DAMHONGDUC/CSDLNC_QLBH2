@@ -30,6 +30,8 @@
         {
             this.btn_autotongtien_CTHD = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dTP_ngaysinh_CTHD = new System.Windows.Forms.DateTimePicker();
+            this.dTP_ngaylap_CTHD = new System.Windows.Forms.DateTimePicker();
             this.txtBox_phuong_CTHD = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txtBox_dienthoai_CTHD = new System.Windows.Forms.TextBox();
@@ -72,15 +74,13 @@
             this.btn_modeKH_CTHD = new System.Windows.Forms.Button();
             this.btn_luu_CTHD = new System.Windows.Forms.Button();
             this.btn_quaylai_CTHD = new System.Windows.Forms.Button();
-            this.dTP_ngaylap_CTHD = new System.Windows.Forms.DateTimePicker();
-            this.dTP_ngaysinh_CTHD = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_autotongtien_CTHD
             // 
-            this.btn_autotongtien_CTHD.Location = new System.Drawing.Point(515, 672);
+            this.btn_autotongtien_CTHD.Location = new System.Drawing.Point(527, 672);
             this.btn_autotongtien_CTHD.Name = "btn_autotongtien_CTHD";
             this.btn_autotongtien_CTHD.Size = new System.Drawing.Size(64, 39);
             this.btn_autotongtien_CTHD.TabIndex = 71;
@@ -138,6 +138,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1182, 826);
             this.panel1.TabIndex = 13;
+            // 
+            // dTP_ngaysinh_CTHD
+            // 
+            this.dTP_ngaysinh_CTHD.CustomFormat = " ";
+            this.dTP_ngaysinh_CTHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dTP_ngaysinh_CTHD.Location = new System.Drawing.Point(838, 285);
+            this.dTP_ngaysinh_CTHD.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dTP_ngaysinh_CTHD.Name = "dTP_ngaysinh_CTHD";
+            this.dTP_ngaysinh_CTHD.Size = new System.Drawing.Size(247, 35);
+            this.dTP_ngaysinh_CTHD.TabIndex = 130;
+            // 
+            // dTP_ngaylap_CTHD
+            // 
+            this.dTP_ngaylap_CTHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dTP_ngaylap_CTHD.Location = new System.Drawing.Point(248, 164);
+            this.dTP_ngaylap_CTHD.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dTP_ngaylap_CTHD.Name = "dTP_ngaylap_CTHD";
+            this.dTP_ngaylap_CTHD.Size = new System.Drawing.Size(259, 35);
+            this.dTP_ngaylap_CTHD.TabIndex = 129;
             // 
             // txtBox_phuong_CTHD
             // 
@@ -238,15 +257,15 @@
             this.txtBox_thanhtien_CTHD.Location = new System.Drawing.Point(248, 671);
             this.txtBox_thanhtien_CTHD.Multiline = true;
             this.txtBox_thanhtien_CTHD.Name = "txtBox_thanhtien_CTHD";
-            this.txtBox_thanhtien_CTHD.Size = new System.Drawing.Size(247, 40);
+            this.txtBox_thanhtien_CTHD.Size = new System.Drawing.Size(259, 40);
             this.txtBox_thanhtien_CTHD.TabIndex = 112;
             // 
             // txtBox_giamgia_CTHD
             // 
-            this.txtBox_giamgia_CTHD.Location = new System.Drawing.Point(248, 595);
+            this.txtBox_giamgia_CTHD.Location = new System.Drawing.Point(248, 598);
             this.txtBox_giamgia_CTHD.Multiline = true;
             this.txtBox_giamgia_CTHD.Name = "txtBox_giamgia_CTHD";
-            this.txtBox_giamgia_CTHD.Size = new System.Drawing.Size(247, 40);
+            this.txtBox_giamgia_CTHD.Size = new System.Drawing.Size(259, 40);
             this.txtBox_giamgia_CTHD.TabIndex = 111;
             // 
             // txtBox_soluongban_CTHD
@@ -254,7 +273,7 @@
             this.txtBox_soluongban_CTHD.Location = new System.Drawing.Point(248, 523);
             this.txtBox_soluongban_CTHD.Multiline = true;
             this.txtBox_soluongban_CTHD.Name = "txtBox_soluongban_CTHD";
-            this.txtBox_soluongban_CTHD.Size = new System.Drawing.Size(247, 40);
+            this.txtBox_soluongban_CTHD.Size = new System.Drawing.Size(259, 40);
             this.txtBox_soluongban_CTHD.TabIndex = 110;
             // 
             // txtBox_giaban_CTHD
@@ -262,7 +281,7 @@
             this.txtBox_giaban_CTHD.Location = new System.Drawing.Point(248, 451);
             this.txtBox_giaban_CTHD.Multiline = true;
             this.txtBox_giaban_CTHD.Name = "txtBox_giaban_CTHD";
-            this.txtBox_giaban_CTHD.Size = new System.Drawing.Size(247, 40);
+            this.txtBox_giaban_CTHD.Size = new System.Drawing.Size(259, 40);
             this.txtBox_giaban_CTHD.TabIndex = 109;
             // 
             // txtBox_slton_CTHD
@@ -270,15 +289,15 @@
             this.txtBox_slton_CTHD.Location = new System.Drawing.Point(248, 379);
             this.txtBox_slton_CTHD.Multiline = true;
             this.txtBox_slton_CTHD.Name = "txtBox_slton_CTHD";
-            this.txtBox_slton_CTHD.Size = new System.Drawing.Size(247, 40);
+            this.txtBox_slton_CTHD.Size = new System.Drawing.Size(259, 40);
             this.txtBox_slton_CTHD.TabIndex = 108;
             // 
             // txtBox_tensp_CTHD
             // 
-            this.txtBox_tensp_CTHD.Location = new System.Drawing.Point(248, 312);
+            this.txtBox_tensp_CTHD.Location = new System.Drawing.Point(248, 296);
             this.txtBox_tensp_CTHD.Multiline = true;
             this.txtBox_tensp_CTHD.Name = "txtBox_tensp_CTHD";
-            this.txtBox_tensp_CTHD.Size = new System.Drawing.Size(247, 40);
+            this.txtBox_tensp_CTHD.Size = new System.Drawing.Size(259, 68);
             this.txtBox_tensp_CTHD.TabIndex = 107;
             // 
             // txtBox_masp_CTHD
@@ -286,7 +305,7 @@
             this.txtBox_masp_CTHD.Location = new System.Drawing.Point(248, 240);
             this.txtBox_masp_CTHD.Multiline = true;
             this.txtBox_masp_CTHD.Name = "txtBox_masp_CTHD";
-            this.txtBox_masp_CTHD.Size = new System.Drawing.Size(247, 40);
+            this.txtBox_masp_CTHD.Size = new System.Drawing.Size(259, 40);
             this.txtBox_masp_CTHD.TabIndex = 106;
             this.txtBox_masp_CTHD.TextChanged += new System.EventHandler(this.txtBox_masp_CTHD_TextChanged);
             // 
@@ -295,7 +314,7 @@
             this.txtBox_mahd_CTHD.Location = new System.Drawing.Point(248, 96);
             this.txtBox_mahd_CTHD.Multiline = true;
             this.txtBox_mahd_CTHD.Name = "txtBox_mahd_CTHD";
-            this.txtBox_mahd_CTHD.Size = new System.Drawing.Size(247, 40);
+            this.txtBox_mahd_CTHD.Size = new System.Drawing.Size(259, 40);
             this.txtBox_mahd_CTHD.TabIndex = 104;
             // 
             // label14
@@ -532,25 +551,6 @@
             this.btn_quaylai_CTHD.Text = "Quay Lại ";
             this.btn_quaylai_CTHD.UseVisualStyleBackColor = true;
             this.btn_quaylai_CTHD.Click += new System.EventHandler(this.btn_quaylai_CTHD_Click);
-            // 
-            // dTP_ngaylap_CTHD
-            // 
-            this.dTP_ngaylap_CTHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dTP_ngaylap_CTHD.Location = new System.Drawing.Point(248, 164);
-            this.dTP_ngaylap_CTHD.MinimumSize = new System.Drawing.Size(0, 35);
-            this.dTP_ngaylap_CTHD.Name = "dTP_ngaylap_CTHD";
-            this.dTP_ngaylap_CTHD.Size = new System.Drawing.Size(247, 40);
-            this.dTP_ngaylap_CTHD.TabIndex = 129;
-            // 
-            // dTP_ngaysinh_CTHD
-            // 
-            this.dTP_ngaysinh_CTHD.CustomFormat = " ";
-            this.dTP_ngaysinh_CTHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dTP_ngaysinh_CTHD.Location = new System.Drawing.Point(838, 285);
-            this.dTP_ngaysinh_CTHD.MinimumSize = new System.Drawing.Size(0, 35);
-            this.dTP_ngaysinh_CTHD.Name = "dTP_ngaysinh_CTHD";
-            this.dTP_ngaysinh_CTHD.Size = new System.Drawing.Size(247, 35);
-            this.dTP_ngaysinh_CTHD.TabIndex = 130;
             // 
             // Form_ChiTietHoaDon
             // 

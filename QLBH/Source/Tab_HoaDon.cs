@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace QLBH
 {
     public partial class Form_Main : Form
     {
+        Form_Loading form_loading = new Form_Loading();
         private void setFont_HD() // set Font cho các textBox 
         {
             txtBox_mahd_HD.Font = new Font("Time New Roman", 12);
@@ -25,14 +27,12 @@ namespace QLBH
             dTP_ngaylap_HD.CustomFormat = " ";
             txtBox_mahd_HD.Text = "";
             txtBox_makh_HD.Text = "";
-            txtBox_tongtien_HD.Text = "";
-
-            btn_xemchitiet_HD.Enabled = false;
+            txtBox_tongtien_HD.Text = "";        
         }
-
+      
         private void LoadData_HoaDon() // tải dữ liệu vào DataGridView
-        {
-            string sql = "SELECT MAHD, MAKH_HD, NGAYLAP, TONGTIEN  FROM HOADON";
+        {          
+            string sql = "SELECT MAHD, MAKH_HD, NGAYLAP, TONGTIEN FROM HOADON ";
             tblHD = Source.Functions.GetDataToTable(sql);
             dgv_HD.DataSource = tblHD;
 
@@ -55,14 +55,27 @@ namespace QLBH
             //Không cho người dùng thêm dữ liệu trực tiếp
             dgv_HD.AllowUserToAddRows = false;
             dgv_HD.EditMode = DataGridViewEditMode.EditProgrammatically;
+
+            form_loading.Close_Form();
         }
 
         private void tabHoaDon_Enter(object sender, EventArgs e) // tải dữ liệu khi vào tab
-        {
+        {           
+            Thread t = new Thread(() =>
+            {              
+                form_loading.StartPosition = FormStartPosition.CenterParent;
+                form_loading.ShowDialog();                
+            });
+
             setFont_HD();
             ResetValues_HD();
+            
 
+            // show form loading         
+            t.Start();       
+            
             LoadData_HoaDon();
+            btn_xemchitiet_HD.Enabled = false;
         }
 
         private void dgv_HD_Click(object sender, EventArgs e) // xử lí khi click vào dataGridView
@@ -105,15 +118,26 @@ namespace QLBH
             // nếu có thêm thì load lại dữ liệu vào dataGridView
             if (form_chitiethoadon.is_themthanhcong)
             {
+                Thread t = new Thread(() =>
+                {
+                    form_loading.StartPosition = FormStartPosition.CenterParent;
+                    form_loading.ShowDialog();
+                });
                 form_chitiethoadon.is_themthanhcong = false;
+
+                // show form loading         
+                t.Start();
+
                 LoadData_HoaDon();
                 ResetValues_HD();
+                btn_xemchitiet_HD.Enabled = false;
             }
         }
 
         private void btn_huy_HD_Click(object sender, EventArgs e) // xử khi khi click nút huỷ
         {
             ResetValues_HD();
+            btn_xemchitiet_HD.Enabled = false;
         }
     }
 }
